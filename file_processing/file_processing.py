@@ -71,9 +71,9 @@ try:
        fh = open('../Data/mbox_short.txt')
    elif inp == 'mbox_big':
         fh = open('../Data/mbox.txt')
-except:
-        print('File non existant')
-        exit()
+except: 
+    print('File non existant')
+    exit()
 
 count =0
 tot = 0
