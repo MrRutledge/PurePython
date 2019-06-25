@@ -45,3 +45,54 @@
 # lst.sort(reverse=True)
 # for key, val in lst[:10]:
 # print(key, val)
+
+
+# fh  = open('../Data/mbox_short.txt')
+
+# for line in fh:
+#     line = line.rstrip()
+
+#     words = line.strip()
+#     print(words)
+
+#     #count = 0
+#     di = dict()
+#     for word in words:
+#         di[word] = di.get(word, 0)+1
+# print(di)
+# largest = -1
+# theword = None
+# for key,value in di.items():
+#     print(key,value)
+#     if value > largest:
+#         largest = value
+#         theword = key
+# print('Done: ', theword,largest)       
+
+# import the file 
+fh = open('../Data/mbox_short.txt')
+count = 0
+Total =0
+lst = list()
+di = dict()
+for line in fh:
+        line  = line.rstrip()
+        if not line.startswith('From'):
+                continue
+        wrds = line.split()
+        #print(line)
+        #print(wrds)
+        for word in wrds:
+                #if  (quote.find('be,') != -1):
+                if (word.find('@') != -1):
+                         di[word] = di.get(word,0)+1
+#print(di)    
+#largest = -1
+#theword =  None 
+for key, value in list(di.items()):
+        lst.append((value, key))
+lst.sort(reverse=True)
+
+for key, value in lst[:]:
+        print(key, value)
+#print('Address:',lst.sort(reverse=True))
