@@ -70,9 +70,16 @@
 # print('Done: ', theword,largest)       
 
 # import the file 
-fh = open('../Data/mbox_short.txt')
-count = 0
-Total =0
+inp = input('Enter the filename:')
+
+#count = 0
+#Total =0
+try:
+       fh = open('../Data/mbox_short.txt')
+except FileNotFoundError:
+        print('File not in the system', fh)
+        quit()
+        
 lst = list()
 di = dict()
 for line in fh:
@@ -93,6 +100,6 @@ for key, value in list(di.items()):
         lst.append((value, key))
 lst.sort(reverse=True)
 
-for key, value in lst[:]:
+for key, value in lst[:1]:
         print(key, value)
 #print('Address:',lst.sort(reverse=True))
