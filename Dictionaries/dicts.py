@@ -49,7 +49,7 @@ for line in fhand:
     #    print(word,'new', newcount)
 
         di[word] = di.get(word,0)+1
-
+# The above line of code can replace the entire commented block
         # if word in di:
         #     di[word]= di[word]+1
         #     print('#exists#')

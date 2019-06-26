@@ -79,7 +79,7 @@ try:
 except FileNotFoundError:
         print('File not in the system', fh)
         quit()
-        
+
 lst = list()
 di = dict()
 for line in fh:
@@ -100,6 +100,6 @@ for key, value in list(di.items()):
         lst.append((value, key))
 lst.sort(reverse=True)
 
-for key, value in lst[:1]:
+for key, value in lst[:]:
         print(key, value)
-#print('Address:',lst.sort(reverse=True))
+#print('Address:',lst)
