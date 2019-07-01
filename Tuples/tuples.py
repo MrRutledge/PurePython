@@ -30,21 +30,21 @@
 # fhand = open('romeo-full.txt')
 # counts = dict()
 # for line in fhand:
-# line = line.translate(str.maketrans('', '', string.punctuation))
-# line = line.lower()
-# words = line.split()
+#       line = line.translate(str.maketrans('', '', string.punctuation))
+#       line = line.lower()
+#       words = line.split()
 # for word in words:
-# if word not in counts:
-# counts[word] = 1
-# else:
-# counts[word] += 1
+#       if word not in counts:
+#               counts[word] = 1
+#       else:
+#               counts[word] += 1
 # # Sort the dictionary by value
 # lst = list()
 # for key, val in list(counts.items()):
-# lst.append((val, key))
-# lst.sort(reverse=True)
+#       lst.append((val, key))
+#       lst.sort(reverse=True)
 # for key, val in lst[:10]:
-# print(key, val)
+#       print(key, val)
 
 
 # fh  = open('../Data/mbox_short.txt')
@@ -96,10 +96,12 @@ for line in fh:
 #print(di)    
 #largest = -1
 #theword =  None 
-for key, value in list(di.items()):
-        lst.append((value, key))
-lst.sort(reverse=True)
+#for key, value in list(di.items()):
+ #       lst.append((value, key))
+#lst.sort(reverse=True)
 
-for key, value in lst[:]:
-        print(key, value)
+print(sorted([[value,key] for key,value in di.items()],reverse=True))
+
+#for key, value in lst[:]:
+ #       print(key, value)
 #print('Address:',lst)
