@@ -6,20 +6,20 @@
 
 
 # Open a file 
-#fh = open('mbox_short.txt')
-#count = 0
-#fh = open('../Data/mbox_short.txt')
-#fh = open('..','Data','mbox_short.txt')
-#count = 0
-#for line in fh:
- #   liney = line.rstrip()
-  #  print(liney.upper())
+fh = open('mbox_short.txt')
+count = 0
+fh = open('../Data/mbox_short.txt')
+fh = open('..','Data','mbox_short.txt')
+count = 0
+for line in fh:
+    liney = line.rstrip()
+    print(liney.upper())
 
 # READ THE WHOLE FILE
-#inp = fh.read()
-#print(len(inp))
-#print(inp[9:20]) 
-#print(inp[94600:])
+inp = fh.read()
+print(len(inp))
+print(inp[9:20]) 
+print(inp[94600:])
 
 #SEARCHING THE FILE
 #count = 0

@@ -18,8 +18,10 @@ soup = BeautifulSoup(html,'html.parser')
 count = 0
 tags = soup('a')
 for tag in tags:
-    #count[tag] += 1 
+    count[tag] += 1 
     print(tag.get('href',None))
-   # count[tag] += 1
+    count[tag] += 1
 
-    #print(count)
+    print(count)
+
+#filerd
