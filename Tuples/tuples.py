@@ -104,12 +104,12 @@ for line in fh:
                 #if  (quote.find('be,') != -1):
                 if (word.find('@') != -1):
                          di[word] = di.get(word,0)+1
-#print(di)    
-#largest = -1
-#theword =  None 
-#for key, value in list(di.items()):
- #       lst.append((value, key))
-#lst.sort(reverse=True)
+print(di)    
+largest = -1
+theword =  None 
+for key, value in list(di.items()):
+        lst.append((value, key))
+lst.sort(reverse=True)
 
 print(sorted([[value,key] for key,value in di.items()],reverse=True))
 
