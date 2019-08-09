@@ -58,21 +58,21 @@ while age <= 0:
                 print('There was an unexcepted error reading input.')
                 raise   #let's re-raise this exception 
 
-# fh  = open('../Data/mbox_short.txt')
+ fh  = open('../Data/mbox_short.txt')
 
-# for line in fh:
-#     line = line.rstrip()
+ for line in fh:
+     line = line.rstrip()
 
-#     words = line.strip()
-#     print(words)
+     words = line.strip()
+     print(words)
 
-#     #count = 0
-#     di = dict()
-#     for word in words:
-#         di[word] = di.get(word, 0)+1
-# print(di)
-# largest = -1
-# theword = None
+     #count = 0
+     di = dict()
+     for word in words:
+         di[word] = di.get(word, 0)+1
+ print(di)
+ largest = -1
+ theword = None
 # for key,value in di.items():
 #     print(key,value)
 #     if value > largest:
