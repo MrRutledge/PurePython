@@ -6,10 +6,10 @@
 
 
 # Open a file 
-fh = open('mbox_short.txt')
-count = 0
+#fh = open('mbox_short.txt')
+#count = 0
 fh = open('../Data/mbox_short.txt')
-fh = open('..','Data','mbox_short.txt')
+#fh = open('..','Data','mbox_short.txt')
 count = 0
 for line in fh:
     liney = line.rstrip()
