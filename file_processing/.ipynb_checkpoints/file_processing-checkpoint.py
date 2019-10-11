@@ -38,7 +38,7 @@ print(inp[94600:])
 
 #Skipping reading through lines without
 
-# for line in fh:
+#for line in fh:
  #   line = line.rstrip()
   #  if not line.startswith('From'):
    #     continue

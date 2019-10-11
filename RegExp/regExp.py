@@ -4,7 +4,7 @@
 #   its imported using import re
 
 import re 
-hand = open('../Data/mbox_short.txt')
+hand = open('/mnt/c/users/shaki/documents/github/Purepython/Data/mbox_short.txt')
 # for line in hand:
 #     line = line.rstrip()
 #     if re.search('^From:',line): 
